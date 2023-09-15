@@ -1,0 +1,2 @@
+# Specify filepatterns you want to assign special attributes.
+matlabScript_* text eol=lf
