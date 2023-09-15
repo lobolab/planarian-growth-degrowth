@@ -16,16 +16,22 @@ The source code is located in the `src` folder and can be directly executed with
 
 To run the simulations, execute any of the following commands in the MATLAB command prompt, replacing any variables in ALL_CAPS with real data:
 
-For growth simulation, using manual parameters:
-`manualGrowthSimulation(NEW_SIM_ID)`
+For growth simulation, using manual parameters, run:
+```matlab
+manualGrowthSimulation(NEW_SIM_ID)
+```
 
-For growth simulation, using the calibrated parameters by the evolutionary algorithm:
-`evolvedGrowthSimulation(NEW_SIM_ID)`
-  
-For degrowth simulation:
-`degrowthSimulation(NEW_SIM_ID)`
+For growth simulation, using the calibrated parameters by the evolutionary algorithm, run:
+```matlab
+evolvedGrowthSimulation(NEW_SIM_ID)
+```
 
-where NEW_SIM_ID is a string identifier for the output directory (e.g. 'sim1').
+For degrowth simulation, run:
+```matlab
+degrowthSimulation(NEW_SIM_ID)
+```
+
+where `NEW_SIM_ID` is a string identifier for the output directory (e.g. 'sim1').
 
 To run some other parameter set, we recommend the configuration in one of the above files.
 
@@ -37,7 +43,7 @@ As cached simulation data and video data are created, new subdirectories with th
 ## Evolutionary algorithm
 To run the evolutionary algorithm, execute the following commands in a Bash shell:
 
-```bash
+```shell
 JOB_NAME=run1
 	
 export MATLAB_LOG_DIR=~/$1
